@@ -25,8 +25,8 @@ const Navbar = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-   <img className="w-11 "  src="https://i.ibb.co/q7KyqzJ/browser.png" alt="" />
-   <img className="w-48 " src="https://i.ibb.co/s1fFGFB/194977.png
+   <img className=" lg:w-10 "  src="https://i.ibb.co/q7KyqzJ/browser.png" alt="" />
+   <img className="w-36 lg:w-48 " src="https://i.ibb.co/s1fFGFB/194977.png
 " alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
