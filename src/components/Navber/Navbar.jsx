@@ -51,7 +51,7 @@ isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login/Register</a>
+    <a className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login / Register</a>
   </div>
 </div>
         </div>
