@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "name": "Web Development Workshop",
+      "image": "https://i.ibb.co/58LZvvh/wepik-export-20231007145709-Arg8.png",
+      "price": 700,
+      "shortDescription": "Enhance your web development skills.",
+      "detailsDescription": [
+        "Join our Web Development Workshop to gain a deep understanding of the latest trends and technologies in web development. In this workshop, you'll learn:",
+        "1. Explore the foundations of HTML and understand how to structure web content effectively.",
+        "2.  Dive into CSS to style web pages, create responsive layouts, and enhance user interfaces.",
+        "3.  Master the fundamentals of JavaScript, including variables, functions, and DOM manipulation.",
+        "4.  Learn the art of creating mobile-friendly and responsive web designs.",
+        "5.  Discover popular development tools and frameworks that streamline the development process.",
+        "6. Apply your knowledge by working on real-world projects and interactive coding exercises.",
+        "7.  Engage with our expert instructors during interactive Q&A sessions.",
+        "8. Networking Opportunities: Connect with fellow web enthusiasts and industry professionals.",
+        "9. Upon successful completion of the seminar, you'll receive a certificate of participation, recognizing your commitment to learning and web development excellence.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Workshops",
+      "starRatings": 4.8,
+      "classHours": 10
+    },
+    {
+      "id": 2,
+      "name": "Digital Marketing Webinar",
+      "image": "https://i.ibb.co/rHgXyvZ/wepik-export-20231007151713gt5-A.png",
+      "price": 300,
+      "shortDescription": "Explore digital marketing strategies.",
+      "detailsDescription": [
+        "In this webinars, you'll learn:",
+        "1. This webinar is designed to help you explore and master digital marketing strategies.",
+        "2. Topics covered include search engine optimization (SEO), social media marketing, and effective online advertising techniques.",
+        "3. Expert guest speakers will share their insights and best practices in the field.",
+        "4. Q&A sessions will provide opportunities to get your questions answered by industry professionals.",
+        "5. Participants who attend the entire webinar will receive a certificate of completion to showcase their knowledge in digital marketing.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Webinars",
+      "starRatings": 4.5,
+      "classHours": 4
+    },
+    {
+      "id": 3,
+      "name": "Study Abroad Info Session",
+      "image": "https://i.ibb.co/vhqfP8c/wepik-export-202310071523420n-Qu.png",
+      "price": 200,
+      "shortDescription": "Explore opportunities for studying abroad.",
+      "detailsDescription": [
+        "In this conferences, you'll learn:",
+        "1. Learn about study programs, scholarships, and application procedures.",
+        "2. Discover exciting international universities and destinations. ",
+        "3. Hear from students who have studied abroad.",
+        "4. Receive valuable tips on cultural adaptation.",
+        "5. Get insights into the benefits of studying abroad.",
+        "6. Certificate of Participation provided to attendees.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Educational Conferences",
+      "starRatings": 3.8,
+      "classHours": 2.5
+    },
+    {
+      "id": 4,
+      "name": "Career Fair - Tech Industry",
+      "image": "https://i.ibb.co/k5tr3Mf/wepik-export-20231007153045-Lrwc.png",
+      "price": 350,
+      "shortDescription": "Connect with tech industry leaders.",
+      "detailsDescription": [
+        "In this conferences, you'll learn:",
+        "1.Network with HR professionals and hiring managers from leading tech companies.",
+        "2. Discover career openings, internships, and co-op programs in the tech industry. ",
+        "3. Participate in resume-building workshops to craft a standout resume.",
+        "4. Engage in networking sessions with tech professionals to expand your industry connections.",
+        "5.  Gain insights from industry experts through panel discussions on tech trends and career advice.",
+        "6. Receive a certificate of participation to showcase your attendance and engagement in the career fair.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Career Fairs",
+      "starRatings": 4.2,
+      "classHours": 5
+    },
+    {
+      "id": 5,
+      "name": "Data Science Bootcamp",
+      "image": "https://i.ibb.co/pf8xQdc/wepik-export-20231007153645-U2-P9.png",
+      "price": 1000,
+      "shortDescription": "Dive into data science and machine learning.",
+      "detailsDescription": [
+        "In this programs, you'll learn:",
+        "1.Comprehensive data science and machine learning curriculum.",
+        "2. Learn data analysis, machine learning algorithms, and data visualization. ",
+        "3. Hands-on projects to apply your skills to real-world problems.",
+        "4. Q&A sessions for in-depth discussions.",
+        "5. Career support to help you land a data science role.",
+        "6. Upon successful completion of the Data Science Bootcamp, you will receive a certificate of achievement.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Training Programs",
+      "starRatings": 5,
+      "classHours": 24
+    },
+    {
+      "id": 6,
+      "name": "Knowledge of Artificial Intelligence ",
+      "image": "https://i.ibb.co/Swz7kJL/wepik-export-20231007154019-Z2y5.png",
+      "price": 2000,
+      "shortDescription": "Gain a deep understanding of Artificial Intelligence (AI).",
+      "detailsDescription": [
+        "In this programs, you'll learn:",
+        "1. Comprehensive coverage of AI fundamentals and concepts.",
+        "2. Hands-on AI projects to apply your knowledge. ",
+        "3. Expert-led sessions with experienced AI professionals.",
+        "4. Mentorship and guidance from experienced data scientists.",
+        "5. In-depth exploration of machine learning algorithms.",
+        "6. Certificate of completion to showcase your AI expertise.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Learning New Technology",
+      "starRatings": 4.8,
+      "classHours": 6
+    },
+    {
+      "id": 7,
+      "name": " Media Security & Hacking",
+      "image": "https://i.ibb.co/NtzNHrQ/wepik-export-20231007154902t-M95.png",
+      "price": 800,
+      "shortDescription": "Learn about media security and hacking.",
+      "detailsDescription": [
+        "1. Explore the world of media security and ethical hacking.",
+        "2. Topics covered include media encryption, cybersecurity threats, and countermeasures. ",
+        "3. Hands-on hacking exercises to understand vulnerabilities and defenses.",
+        "4. Expert instructors with real-world experience in cybersecurity.",
+        "5. In-depth exploration of machine learning algorithms.",
+        "6. Certificate of completion upon finishing this program.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Training Programs",
+      "starRatings": 4.8,
+      "classHours": 12
+    },
+    {
+      "id": 8,
+      "name": " Freelancing Workshop",
+      "image": "https://i.ibb.co/JKmgJvQ/wepik-export-2023100716005578-Gu.png",
+      "price": 600,
+      "shortDescription": "Start and succeed in your freelancing career.",
+      "detailsDescription": [
+        "In this programs, you'll learn:",
+        "1. Understanding the freelance industry and opportunities.",
+        "2. How to create a standout freelancer profile. ",
+        "3. Time management and productivity tips.",
+        "4. Marketing yourself and finding clients.",
+        "5. Q&A sessions with experienced freelancers.",
+        "6. Certificate of Participation provided to attendees.",
+        " Join us for an immersive learning experience!"
+      ],
+      "category": "Workshops",
+      "starRatings": 4.7,
+      "classHours": 10
+    }
+  ]
