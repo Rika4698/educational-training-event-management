@@ -1,16 +1,11 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-
-import { Link } from "react-router-dom";
 
 
-const Services = ({services}) => {
+const Event = ({services}) => {
     const {id,name,image,price,shortDescription} = services || {};
 
     return (
         <div>
-  
-           <div className="card  bg-base-100  ">
+             <div className="card  bg-base-100  ">
   <figure className="px-10 pt-10">
     <img src={image} alt="Shoes" className=" w-[500px] h-[280px] rounded-xl" />
   </figure>
@@ -23,11 +18,8 @@ const Services = ({services}) => {
     </div>
   </div>
 </div>
-
-
-          
         </div>
     );
 };
 
-export default Services;
+export default Event;

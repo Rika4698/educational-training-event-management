@@ -33,19 +33,19 @@ const Navbar = () => {
     <ul className="flex gap-8 text-xl font-normal">
       <li><NavLink to="/"
 className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : ""
+isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : "font-bold"
                 }>Home</NavLink></li>
-      <li><NavLink to="/courses"
+      <li><NavLink to="/service"
 className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : ""
-                }>Courses</NavLink></li>
+isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : "font-bold"
+                }>Event Services</NavLink></li>
       <li><NavLink to="/contact"
 className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : ""
+isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : "font-bold"
                 }>Contact</NavLink></li>
       <li><NavLink to="/about"
 className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : ""
+isPending ? "pending" : isActive ? "text-blue-700 font-bold underline decoration-double" : "font-bold"
                 }>About Us</NavLink></li>
       
     </ul>

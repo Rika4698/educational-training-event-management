@@ -8,8 +8,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './components/Root/Root';
-import Home from './Home/Home';
-import ErrorMessage from './ErrorMessage/ErrorMessage';
+import Home from './components/Home/Home';
+import ErrorMessage from './components/ErrorMessage/ErrorMessage';
+import Events from './components/EventServices/EventServices';
+
+
 
 
 const router = createBrowserRouter([
@@ -21,7 +24,13 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
+        loader: () => fetch('/Data.json'),
         
+      },
+      {
+        path:'/service',
+      element:<Events></Events>,
+      loader: () => fetch('/Data.json'),
       }
     ]
   },
