@@ -10,7 +10,9 @@ import {
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
 import ErrorMessage from './components/ErrorMessage/ErrorMessage';
+
 import Events from './components/EventServices/EventServices';
+import EventSet from './components/EventSet/EventSet';
 
 
 
@@ -31,6 +33,11 @@ const router = createBrowserRouter([
         path:'/service',
       element:<Events></Events>,
       loader: () => fetch('/Data.json'),
+      },
+      {
+        path:'/service/:id',
+        element:<EventSet></EventSet>,
+        loader: () => fetch('/Data.json'),
       }
     ]
   },

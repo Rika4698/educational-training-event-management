@@ -16,9 +16,9 @@ const Footer = () => {
   </aside> 
   <nav className="w-36">
     <div className="grid grid-flow-col gap-4">
-      <a><img src="https://i.ibb.co/n0vvR5N/download.png" alt="" /></a> 
-      <a><img src="https://i.ibb.co/L81GxxG/download-2.png" alt="" /></a> 
-      <a><img src="https://i.ibb.co/gW9hZS6/download-1.png" alt="" /></a>
+      <a href="https://www.facebook.com/"><img src="https://i.ibb.co/n0vvR5N/download.png" alt="" /></a> 
+      <a href="https://www.instagram.com/"><img src="https://i.ibb.co/L81GxxG/download-2.png" alt="" /></a> 
+      <a href="https://www.twitter.com/"><img src="https://i.ibb.co/gW9hZS6/download-1.png" alt="" /></a>
     </div>
   </nav>
 </footer> 

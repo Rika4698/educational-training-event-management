@@ -38,7 +38,7 @@
         " Join us for an immersive learning experience!"
       ],
       "category": "Webinars",
-      "starRatings": 4.5,
+      "starRatings": 4.1,
       "classHours": 4
     },
     {
@@ -98,7 +98,7 @@
         " Join us for an immersive learning experience!"
       ],
       "category": "Training Programs",
-      "starRatings": 5,
+      "starRatings": 5.0,
       "classHours": 24
     },
     {
@@ -118,7 +118,7 @@
         " Join us for an immersive learning experience!"
       ],
       "category": "Learning New Technology",
-      "starRatings": 4.8,
+      "starRatings": 3.8,
       "classHours": 6
     },
     {
@@ -137,7 +137,7 @@
         " Join us for an immersive learning experience!"
       ],
       "category": "Training Programs",
-      "starRatings": 4.8,
+      "starRatings": 3.7,
       "classHours": 12
     },
     {
@@ -157,7 +157,7 @@
         " Join us for an immersive learning experience!"
       ],
       "category": "Workshops",
-      "starRatings": 4.7,
+      "starRatings": 3.7,
       "classHours": 10
     }
   ]

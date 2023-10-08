@@ -19,7 +19,10 @@ const Services = ({services}) => {
     <p className="font-normal text-base text-slate-500">{shortDescription}</p>
      <h3 className="text-base text-pink-400 font-semibold">Price: {price}TK</h3>
     <div className="card-actions">
+      <Link to={`/service/${id}`}>
+
       <button className="btn bg-gradient-to-r from-teal-200 to-blue-400 text-cyan-900 font-bold text-base">View Details</button>
+      </Link>
     </div>
   </div>
 </div>
