@@ -13,6 +13,10 @@ import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 
 import Events from './components/EventServices/EventServices';
 import EventSet from './components/EventSet/EventSet';
+import AddCartSet from './components/AddToCart/AddCartSet';
+import AuthProvider from './Hook/AuthProvider';
+import Login from './components/Login/Login';
+
 
 
 
@@ -35,9 +39,26 @@ const router = createBrowserRouter([
       loader: () => fetch('/Data.json'),
       },
       {
+        path:'/contact',
+
+
+      },
+      {
+        path: '/about',
+
+      },
+      {
         path:'/service/:id',
         element:<EventSet></EventSet>,
         loader: () => fetch('/Data.json'),
+      },
+      {
+        path:'/cart',
+        element:<AddCartSet></AddCartSet>
+      },
+      {
+        path:'/login',
+        element:<Login></Login>,
       }
     ]
   },
@@ -45,6 +66,11 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
+    
+    </AuthProvider>
+    
+    
   </React.StrictMode>,
 )

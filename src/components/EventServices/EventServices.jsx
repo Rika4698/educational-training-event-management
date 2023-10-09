@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 
 import { useLoaderData } from "react-router-dom";
-import Services from "../Services/Services";
+
 import Event from "./Event";
 
 
@@ -21,6 +21,7 @@ const Events = () => {
             {
             service.map(services =><Event key={services.id} services={services}></Event>
              )
+             
             }
             </div>
            

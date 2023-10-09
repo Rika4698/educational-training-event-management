@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
 
@@ -49,11 +53,23 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>About Us</NavLink></li>
+                <li><NavLink to='/cart' className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn" : ""
+                }>
+                {/* <div className="indicator">  */}
+                <FontAwesomeIcon icon={faCartShopping} color="blue" />
+                {/* <span className="badge badge-sm indicator-item">{cartCount}</span>
+                </div> */}
+                </NavLink>
+               
+                </li>
       
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login / Register</a>
+    <NavLink to='/login'>
+    <button className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login / Register</button>
+    </NavLink>
   </div>
 </div>
         </div>
