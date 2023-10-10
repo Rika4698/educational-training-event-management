@@ -36,10 +36,25 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Contact</NavLink></li>
-      <li><NavLink to="/about"
+               {
+                    !user? "": <>
+                    <li><NavLink to='/cart' className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
+                }>
+                {/* <div className="indicator">  */}
+                <FontAwesomeIcon icon={faCartShopping} color="blue" />
+                {/* <span className="badge badge-sm indicator-item">{cartCount}</span>
+                </div> */}
+                </NavLink>
+               
+                </li>
+                <li><NavLink to='/purchase'
 className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
-                }>About Us</NavLink></li>
+isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double text-base" : "font-semibold text-base"
+                }>Blog</NavLink></li>
+                </>
+      
+                }
      
          
       </ul>
@@ -62,11 +77,10 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Contact</NavLink></li>
-      <li><NavLink to="/about"
-className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
-                }>About Us</NavLink></li>
-                <li><NavLink to='/cart' className={({ isActive, isPending }) =>
+      
+                {
+                    !user? "": <>
+                    <li><NavLink to='/cart' className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
                 }>
                 {/* <div className="indicator">  */}
@@ -76,11 +90,13 @@ isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
                 </NavLink>
                
                 </li>
-                <li><NavLink to="/purchase"
+                <li><NavLink to='/purchase'
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double text-base" : "font-semibold text-base"
-                }>Purchase</NavLink></li>
+                }>Blog</NavLink></li>
+                </>
       
+                }
     </ul>
   </div>
   {

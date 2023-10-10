@@ -1,6 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import HomeService from "../Services/HomeService";
+import BlogSection from "../PurchaseList/BlogSection";
+import Section from "../section/section";
 
 
 
@@ -11,7 +13,8 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <HomeService service={service}></HomeService>
-            {/* <TopService>service={service}</TopService> */}
+            <BlogSection></BlogSection>
+            <Section></Section>
         </div>
     );
 };

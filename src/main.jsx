@@ -18,8 +18,8 @@ import AuthProvider from './Hook/AuthProvider';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import PurchaseList from './components/PurchaseList/PurchaseLIst';
-
+import Blogs from './components/PurchaseList/Blogs';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -43,13 +43,11 @@ const router = createBrowserRouter([
       },
       {
         path:'/contact',
+        element:<Contact></Contact>,
 
 
       },
-      {
-        path: '/about',
-
-      },
+      
       {
         path:'/service/:id',
         element:<PrivateRoute><EventSet></EventSet></PrivateRoute>,
@@ -61,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
          path:'/purchase',
-         element:<PurchaseList></PurchaseList>,
+        element:<PrivateRoute><Blogs></Blogs></PrivateRoute>,
       },
       {
         path:'/login',

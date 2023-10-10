@@ -29,7 +29,19 @@ const handleLogin = e =>{
    
     const email = form.get("email");
     const password = form.get("password");
-  if((email,password))
+    setErrorMessage("");
+//     if(email)
+//     {
+//           setErrorMessage("Email does not match!");
+//           return;
+//     }
+//   else if(password)
+//     {
+//         setErrorMessage("Password does not match!");
+//         return;
+//     }
+    
+    if((email,password))
   {
     signIn(email,password)
     .then ((result) => {
@@ -43,7 +55,12 @@ const handleLogin = e =>{
           navigate(location?.state?location.state :'/' )
     })
     .catch((err) => {
-        setErrorMessage(err.message);
+        console.log(err);
+       
+        
+         setErrorMessage("Email and Password does not match!");
+        
+     
         swal({
             
             text: "Invalied Login",

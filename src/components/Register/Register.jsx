@@ -29,7 +29,7 @@ const[errormessage, setErrorMessage] =useState("");
 
 const handleRegister = e => {
     e.preventDefault ();
-    console.log(e.currentTarget);
+    // console.log(e.currentTarget);
     // const Email = e.target.email.value;
     // console.log(Email);
     const form = new FormData(e.currentTarget);
@@ -39,21 +39,40 @@ const handleRegister = e => {
     const photoURL = form.get("photo");
     const email = form.get("email");
     const password = form.get("password");
+    
+   
+    if(password.length <6 )
+    {
+        
+        setErrorMessage("Password must contains at least 6 character")
+        
+        return;
+    }
+    
+    else if(!/[A-Z]/.test(password)){
+        setErrorMessage("Password must contains at least 1 uppercase letter.")
+        return;
 
-    if(!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password))
-    { 
-        // console.log(password);
-        setErrorMessage(" Please give minimum six characters, at least one capital and small letter, one number and one special character!");
+    }
+    else if(!/[#?!@$%^&*-]/.test(password))
+    {
+        setErrorMessage("Password must contains at least 1 special character.")
+        return;
+    }
+    // if(!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password))
+    // { 
+    //     // console.log(password);
+    //     setErrorMessage(" Please give minimum six characters, at least one capital and small letter, one number and one special character!");
         
       
 
-        swal({
+        // swal({
             
-            text: " Give minimum six characters, at least one capital and small letter, one number and one special character!",
-            icon: "warning",
+        //     text: " Give minimum six characters, at least one capital and small letter, one number and one special character!",
+        //     icon: "warning",
             
-          });
-    }
+        //   });
+    // }
     else{
         setErrorMessage("");
         if(email)
@@ -71,6 +90,7 @@ const handleRegister = e => {
            
             .catch(error => {
                 console.log(error);
+              
             })
         }
     }

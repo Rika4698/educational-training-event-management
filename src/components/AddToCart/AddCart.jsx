@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
-import swal from "sweetalert";
+
 
 
 const AddCart = ({services,handleRemove}) => {
@@ -30,7 +30,7 @@ const AddCart = ({services,handleRemove}) => {
 <button className="btn bg-gradient-to-r from-teal-200 to-blue-400 text-cyan-900 font-bold text-base">View Details</button>
 </Link>
 
-<button  className="btn bg-gradient-to-r from-rose-400 to-blue-400 text-slate-900 font-bold text-base">Make Purchase</button>
+{/* <button  className="btn bg-gradient-to-r from-rose-400 to-blue-400 text-slate-900 font-bold text-base">Make Purchase</button> */}
 
      </div>
     </div>
