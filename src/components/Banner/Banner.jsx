@@ -3,7 +3,9 @@
 
 const Banner = () => {
     return (
-        <div>
+        <div   data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <div className="hero h-[500px]" style={{backgroundImage: 'url(https://i.ibb.co/bspnTKj/wepik-export-20231007064800-PH94.jpg)'}}>
   <div className="hero-overlay bg-opacity-50"></div>
   <div className="hero-content  ">

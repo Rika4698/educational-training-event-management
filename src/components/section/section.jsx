@@ -1,7 +1,9 @@
 
 const Section = () => {
     return (
-        <div className="bg-lime-50">
+        <div className="bg-lime-50" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <h1 className="text-center font-bold text-emerald-500 text-5xl mt-10">Why choose us</h1>
             <p className="text-sm text-center mt-4">We are ready to give you full computer skill development and freelancing services.
 Our Strong team can give you 100% Satisfied support</p>

@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
-import PrivateRoute from "../PrivateRoute/PrivateRoute";
+
 
 
 const Services = ({services}) => {
@@ -11,9 +11,9 @@ const Services = ({services}) => {
     return (
         <div>
   
-           <div className="card  bg-base-100 h-[560px] xl:h-auto">
+           <div className="card  bg-base-100 h-[560px] xl:h-auto"  data-aos="zoom-in-up">
   <figure className="px-10 pt-10">
-    <img src={image} alt="Shoes" className=" w-[500px] h-[255px] rounded-xl" />
+    <img src={image} alt="" className=" w-[500px] h-[255px] rounded-xl" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title font-bold text-xl">{name}</h2>
