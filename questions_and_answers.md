@@ -18,9 +18,11 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A . 
+ 
 
-<i>Write your explanation here</i>
+
+<i>Because creates an empty object and assigns it to the greetign variable. So it output an empty object.</i>
 
 </p>
 </details>
@@ -43,9 +45,10 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C.
 
-<i>Write your explanation here</i>
+
+<i>Here a is integer and b is string.The sum function is called with two arguments. When one of the operands is a string, JavaScript converts the other operand to a string as well and performs string concatenation instead of numerical addition. So 1 converted is string and 1 ,2 is string which sum is '12'.</i>
 
 </p>
 </details>
@@ -69,9 +72,10 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A.
+  
 
-<i>Write your explanation here</i>
+<i>Here this updated favorite food is not push in array.  This is not change. So output is original array.</i>
 
 </p>
 </details>
@@ -94,9 +98,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B.
 
-<i>Write your explanation here</i>
+<i>Here sayHi() is called without passing any value for name. "name" inside the function will be undefined because no argument was provided. So it show us Hi there,undefined.</i>
 
 </p>
 </details>
@@ -122,9 +126,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C.
 
-<i>Write your explanation here</i>
+<i>Here if(num) checks if the current element num is truthy. 0 is considered falsy, while all other numbers, including 1,2 and 3 are truthy.  the condition if(num) is true for all elements in the array except 0, the count variable is incremented by 1 for each of these truthy elements. As a result, count is incremented three times  for each 1, 2, and 3. So making it equal to 3.</i>
 
 </p>
 </details>
