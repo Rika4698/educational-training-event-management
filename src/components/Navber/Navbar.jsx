@@ -18,8 +18,10 @@ const handleSignOut = () =>{
         return (
         <div>
             <div className="navbar bg-base-100">
-  <div className="navbar-start "   data-aos="fade-right"
-     data-aos-duration="2000">
+  <div className="navbar-start "   
+  data-aos="fade-right"
+     data-aos-duration="2000"
+     >
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -68,8 +70,14 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
   </div>
 
 
-  <div className="navbar-center hidden lg:flex"   data-aos="fade-down"
+  <div className="navbar-center hidden lg:flex" 
+    
+    
+     data-aos="zoom-in-down"
      data-aos-duration="2000">
+     
+
+
     <ul className="flex gap-6 text-xl ml-10 font-normal xl:gap-8">
       <li><NavLink to="/"
 className={({ isActive, isPending }) =>
@@ -107,16 +115,20 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
   </div>
   {
     user?
-   <div className="navbar-end"  data-aos="fade-left"
-   data-aos-duration="2000">
+   <div className="navbar-end"
+     data-aos="fade-down-right"
+   data-aos-duration="2000"
+   >
     
     <img className="w-8 ml-10" src={user.photoURL} alt="" />
     <h3 className=" text-sm text-center font-semibold ml-2 mr-2">{user.displayName}</h3>
     <button className="btn text-white bg-gradient-to-r from-sky-400 to-green-500 w-16 h-8 lg:w-auto"  onClick={handleSignOut}>Logout</button> 
     </div>
        :
-    <div className="navbar-end"  data-aos="fade-left"
-    data-aos-duration="2000">
+    <div className="navbar-end" 
+     data-aos="fade-down-right"
+    data-aos-duration="2000"
+    >
     <NavLink to='/login'>
     <button className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login</button>
     </NavLink>

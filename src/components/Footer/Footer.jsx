@@ -2,8 +2,9 @@
 
 const Footer = () => {
     return (
-        <div data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom">
+        <div 
+        data-aos="fade-down"
+        >
            <footer className="footer footer-center p-10 bg-pink-100 ">
   <aside>
    <div className="flex ">
