@@ -2,11 +2,19 @@
 
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../Hook/AuthProvider";
 
 
 const Navbar = () => {
-    return (
+    const{user,logOut} = useContext(AuthContext);
+const handleSignOut = () =>{
+    logOut()
+    .then()
+    .catch()
+}
+        return (
         <div>
             <div className="navbar bg-base-100">
   <div className="navbar-start">
@@ -66,11 +74,15 @@ isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn" : ""
       
     </ul>
   </div>
-  <div className="navbar-end">
+  {
+    user?
+    <button onClick={handleSignOut}>Logout</button>:
+    <div className="navbar-end">
     <NavLink to='/login'>
     <button className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login / Register</button>
     </NavLink>
   </div>
+  }
 </div>
         </div>
     );

@@ -1,16 +1,54 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../Hook/AuthProvider";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import swal from "sweetalert";
+import Home from "../Home/Home";
 
 
 const Login = () => {
+const {signIn} = useContext(AuthContext);
 const {googleSignIn} = useContext(AuthContext);
 const handleGoogle = () => {
     googleSignIn().then ((result) => {
         console.log(result.user);
     })
     
+};
+const[errormessage, setErrorMessage] =useState("");
+
+const handleLogin = e =>{
+    e.preventDefault ();
+    const form = new FormData(e.currentTarget);
+   
+    const email = form.get("email");
+    const password = form.get("password");
+  if((email,password))
+  {
+    signIn(email,password)
+    .then ((result) => {
+        console.log(result.user);
+        swal({
+            
+            text: "Login done successfully",
+            icon: "success",
+            
+          })
+    })
+    .catch((err) => {
+        setErrorMessage(err.message);
+        swal({
+            
+            text: "Invalied Login",
+            icon: "warning",
+            
+          })
+          
+    });
+    
+  }
 }
 
 
@@ -20,28 +58,35 @@ const handleGoogle = () => {
             <div className="hero bg-base-200">
   <div className="hero-content flex-col lg:flex">
     
-    <div className="card flex-shrink-0 w-full max-w-sm lg:w-[500px] min-h-screen shadow-2xl bg-base-100">
+    <div className="card  w-full max-w-sm lg:w-[500px] min-h-screen shadow-2xl bg-base-100">
     <div className="text-center mt-8">
       <h1 className="text-3xl font-bold text-blue-900">Login Now</h1>
-     <p>Enter your details to login</p>
+     <p className="mt-4">Enter your details to login</p>
     </div>
-      <form className="card-body">
+      <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" placeholder="email" className="input input-bordered" required />
+          <input type="email" placeholder="email" className="input input-bordered" required name="email"/>
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input type="password" placeholder="password" className="input input-bordered" required />
+          <input type="password" placeholder="password" className="input input-bordered" required name="password"/>
          
         </div>
+        <p className="text-red-500 text-base">{errormessage}</p>
+       
         <div className="form-control mt-6">
-          <button onClick={handleGoogle} className="btn btn-primary">Login</button>
+          <button  className="btn btn-primary">Login</button>
         </div>
+        <h3 className="text-center mt-4">Don't have an account? <Link to="/register" className="text-blue-900 font-bold">Registration</Link></h3>
+        <button onClick={handleGoogle} className="  flex gap-4 bg-slate-200 rounded-full w-56 mx-10 my-4 outline hover:outline-4  outline-slate-100">
+            <img className="rounded-full w-14 " src="https://i.ibb.co/41Gt5P3/178-1780776-googles-new-dataset-search-aims-to-assist-researchers.jpg" alt="" />
+            <h3 className="mt-3 text-base">Sign in with Google </h3>
+        </button>
       </form>
     </div>
   </div>

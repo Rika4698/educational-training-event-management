@@ -16,6 +16,7 @@ import EventSet from './components/EventSet/EventSet';
 import AddCartSet from './components/AddToCart/AddCartSet';
 import AuthProvider from './Hook/AuthProvider';
 import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 
 
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
       {
         path:'/login',
         element:<Login></Login>,
+      },
+      {
+        path:"/register",
+        element:<Register></Register>,
       }
     ]
   },
