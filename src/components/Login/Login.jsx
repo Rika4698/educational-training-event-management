@@ -1,19 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Hook/AuthProvider";
 import { useContext, useState } from "react";
 import swal from "sweetalert";
-import Home from "../Home/Home";
+
+
 
 
 const Login = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
 const {signIn} = useContext(AuthContext);
 const {googleSignIn} = useContext(AuthContext);
 const handleGoogle = () => {
     googleSignIn().then ((result) => {
         console.log(result.user);
+         navigate(location?.state?location.state :'/' )
     })
     
 };
@@ -36,6 +40,7 @@ const handleLogin = e =>{
             icon: "success",
             
           })
+          navigate(location?.state?location.state :'/' )
     })
     .catch((err) => {
         setErrorMessage(err.message);

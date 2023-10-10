@@ -9,6 +9,7 @@ import { AuthContext } from "../../Hook/AuthProvider";
 
 const Navbar = () => {
     const{user,logOut} = useContext(AuthContext);
+    
 const handleSignOut = () =>{
     logOut()
     .then()
@@ -27,16 +28,20 @@ const handleSignOut = () =>{
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Home</NavLink></li>
-      <li><NavLink to="/service"
+      <li><NavLink to="/services"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
-                }>Event Services</NavLink></li>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        
-        <li><a>Item 3</a></li>
+                }>Event-Services</NavLink></li>
+                 <li><NavLink to="/contact"
+className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
+                }>Contact</NavLink></li>
+      <li><NavLink to="/about"
+className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
+                }>About Us</NavLink></li>
+     
+         
       </ul>
     </div>
    <img className=" lg:w-10 "  src="https://i.ibb.co/q7KyqzJ/browser.png" alt="" />
@@ -44,15 +49,15 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
 " alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="flex gap-8 text-xl font-normal">
+    <ul className="flex gap-6 text-xl ml-10 font-normal xl:gap-8">
       <li><NavLink to="/"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Home</NavLink></li>
-      <li><NavLink to="/service"
+      <li><NavLink to="/services"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
-                }>Event Services</NavLink></li>
+                }>Event-Services</NavLink></li>
       <li><NavLink to="/contact"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
@@ -62,7 +67,7 @@ className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>About Us</NavLink></li>
                 <li><NavLink to='/cart' className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn" : ""
+isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
                 }>
                 {/* <div className="indicator">  */}
                 <FontAwesomeIcon icon={faCartShopping} color="blue" />
@@ -71,15 +76,25 @@ isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn" : ""
                 </NavLink>
                
                 </li>
+                <li><NavLink to="/purchase"
+className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double text-base" : "font-semibold text-base"
+                }>Purchase</NavLink></li>
       
     </ul>
   </div>
   {
     user?
-    <button onClick={handleSignOut}>Logout</button>:
+   <div className="navbar-end">
+    
+    <img className="w-8 ml-10" src={user.photoURL} alt="" />
+    <h3 className=" text-sm text-center font-semibold ml-2 mr-2">{user.displayName}</h3>
+    <button className="btn text-white bg-gradient-to-r from-sky-400 to-green-500 w-16 h-8 lg:w-auto"  onClick={handleSignOut}>Logout</button> 
+    </div>
+       :
     <div className="navbar-end">
     <NavLink to='/login'>
-    <button className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login / Register</button>
+    <button className="btn text-white bg-gradient-to-r from-violet-400 to-blue-500">Login</button>
     </NavLink>
   </div>
   }

@@ -17,6 +17,8 @@ import AddCartSet from './components/AddToCart/AddCartSet';
 import AuthProvider from './Hook/AuthProvider';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import PurchaseList from './components/PurchaseList/PurchaseLIst';
 
 
 
@@ -35,7 +37,7 @@ const router = createBrowserRouter([
         
       },
       {
-        path:'/service',
+        path:'/services',
       element:<Events></Events>,
       loader: () => fetch('/Data.json'),
       },
@@ -50,12 +52,16 @@ const router = createBrowserRouter([
       },
       {
         path:'/service/:id',
-        element:<EventSet></EventSet>,
+        element:<PrivateRoute><EventSet></EventSet></PrivateRoute>,
         loader: () => fetch('/Data.json'),
       },
       {
         path:'/cart',
-        element:<AddCartSet></AddCartSet>
+        element:<PrivateRoute><AddCartSet></AddCartSet></PrivateRoute>
+      },
+      {
+         path:'/purchase',
+         element:<PurchaseList></PurchaseList>,
       },
       {
         path:'/login',

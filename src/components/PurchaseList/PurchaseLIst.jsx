@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
+import Event from "../EventServices/Event";
 
-import AddCart from "./AddCart";
 
-
-const AddCartSet = () => {
-    const [cart, setCart] = useState([]);
+const PurchaseList = () => {
+    const [purchase, setPurchase] = useState([]);
     const [noFound, setNoFound] = useState(false);
     
     useEffect(() => {
@@ -12,7 +11,7 @@ const AddCartSet = () => {
         const cartItems = JSON.parse(localStorage.getItem("cart"));
         
         if(cartItems && cartItems.length>0) {
-            setCart(cartItems);
+            setPurchase(cartItems);
         }
         else {
             setNoFound("Not Added Anything!");
@@ -25,7 +24,7 @@ const AddCartSet = () => {
        
         const updatedCart = cart.filter((item) => item.id !== id);
         localStorage.setItem("cart", JSON.stringify(updatedCart));
-        setCart(updatedCart);
+        setPurchase(updatedCart);
         if (updatedCart.length == 0) {
             localStorage.clear();
             setNoFound("Not Added Anything!")
@@ -47,8 +46,8 @@ const AddCartSet = () => {
                        
                     <div className="grid grid-cols-1 mb-6 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4">
                         {
-                             cart.map((services) => (
-                                <AddCart key={services.id} services={services} setCart={setCart} handleRemove={handleRemove}></AddCart>
+                             purchase.map((services) => (
+                                <Event key={services.id} services={services} setCart={setPurchase} handleRemove={handleRemove}></Event>
 
                             ))
                                
@@ -62,4 +61,4 @@ const AddCartSet = () => {
     );
 };
 
-export default AddCartSet;
+export default PurchaseList;

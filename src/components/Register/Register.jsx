@@ -1,16 +1,20 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Hook/AuthProvider";
 import swal from "sweetalert";
 
 
 const Register = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
     const {googleSignIn} = useContext(AuthContext);
     const {createUser} = useContext(AuthContext);
+    const {userProfile} = useContext(AuthContext);
 const handleGoogle = () => {
     googleSignIn().then ((result) => {
         console.log(result.user);
+        navigate(location?.state?location.state :'/' )
     })
     .catch(error => {
         console.log(error);
@@ -31,8 +35,8 @@ const handleRegister = e => {
     const form = new FormData(e.currentTarget);
     // console.log(form.get("photo"));
     // console.log(form.get("name"));
-    const name = form.get("name");
-    const photo = form.get("photo");
+    const displayName = form.get("name");
+    const photoURL = form.get("photo");
     const email = form.get("email");
     const password = form.get("password");
 
@@ -54,15 +58,15 @@ const handleRegister = e => {
         setErrorMessage("");
         if(email)
         {
-            createUser(email,password)
+            createUser(displayName,photoURL,email,password)
             .then ((result) => {
                 console.log(result.user);
                  swal({
             
                 text: "Registration done successfully",
                 icon: "success",
-                
               })
+              navigate("/login");
             })
            
             .catch(error => {

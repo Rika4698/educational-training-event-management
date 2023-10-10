@@ -9,9 +9,9 @@ const Event = ({services}) => {
 
     return (
         <div>
-             <div className="card  bg-base-100  ">
+             <div className="card  bg-base-100 h-[560px] xl:h-auto ">
   <figure className="px-10 pt-10">
-    <img src={image} alt="Shoes" className=" w-[500px] h-[280px] rounded-xl" />
+    <img src={image} alt="Shoes" className=" w-[500px]  h-[255px] rounded-xl" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title font-bold text-xl">{name}</h2>
