@@ -39,10 +39,10 @@ const ServiceDetails = ({services}) => {
 
     return (
         <div>
-            <hr className="border-[2px]" />
+            <hr className="" />
             <h1 className="font-bold text-5xl  text-teal-500 ml-4 lg:ml-20 mt-10">Event Details__</h1>
-            <div className="card lg:card-side bg-base-100  m-10">
-  <figure className=" w-auto  lg:w-[550px] lg:h-[500px]"><img src={image} alt="Album"/></figure>
+            <div className="card lg:card-side lg:mx-10 bg-base-100  my-8">
+  <figure className=" w-auto  lg:w-[550px] lg:h-[500px]"><img src={image} alt=""/></figure>
   <div className="card-body">
     <h2 className="card-title font-bold text-3xl">{name}</h2>
     <h3 className="text-gray-400">category: {category}</h3>
@@ -55,7 +55,7 @@ const ServiceDetails = ({services}) => {
     {detailsDescription?.map((paragraph, index) => (
           <p className="" key={index}>{paragraph}</p>
         ))}
-        <hr className="w-[300px] lg:w-auto"/>
+        <hr />
     
     <div className="card-actions justify-between">
     <h3 className="font-bold text-pink-500 text-xl mt-2">Price: {price}TK</h3>

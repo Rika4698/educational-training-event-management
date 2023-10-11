@@ -17,7 +17,8 @@ const handleSignOut = () =>{
 }
         return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100" data-aos="fade-right"
+     data-aos-duration="2000">
   <div className="navbar-start "   
   data-aos="fade-right"
      data-aos-duration="2000"
@@ -64,9 +65,11 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
     </div>
 
 
-   <img className=" lg:w-10 "  src="https://i.ibb.co/q7KyqzJ/browser.png" alt="" />
-   <img className="w-36 lg:w-48 " src="https://i.ibb.co/s1fFGFB/194977.png
+  <div className="flex ">
+  <img className=" lg:w-10 "  src="https://i.ibb.co/q7KyqzJ/browser.png" alt="" />
+   <img className="w-36  lg:w-48 " src="https://i.ibb.co/s1fFGFB/194977.png
 " alt="" />
+  </div>
   </div>
 
 
@@ -115,14 +118,14 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
   </div>
   {
     user?
-   <div className="navbar-end"
-     data-aos="fade-down-right"
-   data-aos-duration="2000"
+   <div className="navbar-end  "
+  //    data-aos="fade-right"
+  // //  data-aos-duration="3000"
    >
     
-    <img className="w-8 ml-10" src={user.photoURL} alt="" />
-    <h3 className=" text-sm text-center font-semibold ml-2 mr-2">{user.displayName}</h3>
-    <button className="btn text-white bg-gradient-to-r from-sky-400 to-green-500 w-16 h-8 lg:w-auto"  onClick={handleSignOut}>Logout</button> 
+    <img className="w-8 rounded-full" src={user.photoURL} alt="" />
+    <h3 className=" w-12 mr-2  text-sm text-center font-semibold lg:mx-6 md:mx-6">{user.displayName}</h3>
+    <button className="rounded-lg text-white bg-gradient-to-r from-sky-400 to-green-500 w-18 h-8   lg:w-24 lg:h-10 md:w-24 md:h-10 "  onClick={handleSignOut}>Logout</button> 
     </div>
        :
     <div className="navbar-end" 
