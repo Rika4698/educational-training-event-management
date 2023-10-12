@@ -24,6 +24,7 @@ import Contact from './components/Contact/Contact';
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/services',
-      element:<Events></Events>,
+      element:<PrivateRoute><Events></Events></PrivateRoute>,
       loader: () => fetch('/Data.json'),
       },
       {
@@ -55,12 +56,16 @@ const router = createBrowserRouter([
       },
       {
         path:'/cart',
-        element:<PrivateRoute><AddCartSet></AddCartSet></PrivateRoute>
+        element:<AddCartSet></AddCartSet>
       },
       {
          path:'/purchase',
         element:<PrivateRoute><Blogs></Blogs></PrivateRoute>,
       },
+      // {
+      //         path:'/buy',
+      //         element:<Purchase></Purchase>,
+      // },
       {
         path:'/login',
         element:<Login></Login>,

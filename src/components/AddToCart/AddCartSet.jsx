@@ -10,6 +10,7 @@ const AddCartSet = () => {
     useEffect(() => {
 
         const cartItems = JSON.parse(localStorage.getItem("cart"));
+       
         
         if(cartItems && cartItems.length>0) {
             setCart(cartItems);
@@ -21,6 +22,7 @@ const AddCartSet = () => {
         
         
     }, []);
+   
     const handleRemove = (id) => {
        
         const updatedCart = cart.filter((item) => item.id !== id);

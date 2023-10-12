@@ -32,17 +32,27 @@ const handleSignOut = () =>{
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Home</NavLink></li>
-      <li><NavLink to="/services"
+      
+                 
+               {
+                    !user? "": <>
+                  
+                <li><NavLink to="/services"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Event-Services</NavLink></li>
-                 <li><NavLink to="/contact"
+                <li><NavLink to='/purchase'
+className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double text-base" : "font-semibold text-base"
+                }>Blog</NavLink></li>
+                </>
+      
+                }
+                <li><NavLink to="/contact"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Contact</NavLink></li>
-               {
-                    !user? "": <>
-                    <li><NavLink to='/cart' className={({ isActive, isPending }) =>
+                 <li><NavLink to='/cart' className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
                 }>
                 {/* <div className="indicator">  */}
@@ -52,13 +62,6 @@ isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
                 </NavLink>
                
                 </li>
-                <li><NavLink to='/purchase'
-className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double text-base" : "font-semibold text-base"
-                }>Blog</NavLink></li>
-                </>
-      
-                }
      
          
       </ul>
@@ -86,18 +89,29 @@ isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Home</NavLink></li>
-      <li><NavLink to="/services"
+     
+      
+                {
+                    !user? "": <>
+                  
+                <li><NavLink to="/services"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Event-Services</NavLink></li>
+               
+                
+                <li><NavLink to='/purchase'
+className={({ isActive, isPending }) =>
+isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
+                }>Blog</NavLink></li>
+                 </>
+                 } 
+                   
       <li><NavLink to="/contact"
 className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double" : "font-semibold"
                 }>Contact</NavLink></li>
-      
-                {
-                    !user? "": <>
-                    <li><NavLink to='/cart' className={({ isActive, isPending }) =>
+                  <li><NavLink to='/cart' className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
                 }>
                 {/* <div className="indicator">  */}
@@ -105,15 +119,16 @@ isPending ? "pending" : isActive ? "bg-slate-300 rounded-btn ml-2" : "ml-2"
                 {/* <span className="badge badge-sm indicator-item">{cartCount}</span>
                 </div> */}
                 </NavLink>
-               
                 </li>
-                <li><NavLink to='/purchase'
-className={({ isActive, isPending }) =>
-isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double text-base" : "font-semibold text-base"
-                }>Blog</NavLink></li>
-                </>
+                 
+                 
+{/* //                 {/* <li><NavLink to='/buy'
+// className={({ isActive, isPending }) =>
+// isPending ? "pending" : isActive ? "text-blue-800 font-bold underline decoration-double text-base" : "font-semibold text-base"
+//                 }>purchase</NavLink></li>
+//                 </> */} 
       
-                }
+                
     </ul>
   </div>
   {
