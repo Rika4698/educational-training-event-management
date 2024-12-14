@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Web Development Workshop",
+      "name": "Web Development ",
       "image": "https://i.ibb.co/58LZvvh/wepik-export-20231007145709-Arg8.png",
       "price": 700,
       "shortDescription": "Enhance your web development skills.",
@@ -20,7 +20,7 @@
       ],
       "category": "Workshops",
       "starRatings": 4.8,
-      "classHours": 10
+      "classHours": 3
     },
     {
       "id": 2,
@@ -83,7 +83,7 @@
     },
     {
       "id": 5,
-      "name": "Data Science Bootcamp",
+      "name": "Data Science Bootcamp ",
       "image": "https://i.ibb.co/pf8xQdc/wepik-export-20231007153645-U2-P9.png",
       "price": 1000,
       "shortDescription": "Dive into data science and machine learning.",
@@ -99,11 +99,11 @@
       ],
       "category": "Training Programs",
       "starRatings": 5.0,
-      "classHours": 24
+      "classHours": 5
     },
     {
       "id": 6,
-      "name": "Knowledge of Artificial Intelligence ",
+      "name": " Artificial Intelligence ",
       "image": "https://i.ibb.co/Swz7kJL/wepik-export-20231007154019-Z2y5.png",
       "price": 2000,
       "shortDescription": " Dive into the world of artificial intelligence.",
@@ -138,11 +138,11 @@
       ],
       "category": "Training Programs",
       "starRatings": 3.7,
-      "classHours": 12
+      "classHours": 8
     },
     {
       "id": 8,
-      "name": " Freelancing Workshop",
+      "name": " Freelancing Fundamentals ",
       "image": "https://i.ibb.co/JKmgJvQ/wepik-export-2023100716005578-Gu.png",
       "price": 600,
       "shortDescription": "Start and succeed in your freelancing career.",
@@ -158,6 +158,6 @@
       ],
       "category": "Workshops",
       "starRatings": 3.7,
-      "classHours": 10
+      "classHours": 6
     }
   ]

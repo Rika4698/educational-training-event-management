@@ -9,7 +9,7 @@ const Event = ({services}) => {
 
     return (
         <div>
-             <div className="card  bg-base-100 h-[560px] xl:h-auto ">
+             <div className="card  bg-base-100 h-[560px]  xl:h-auto ">
   <figure className="px-10 pt-10">
     <img src={image} alt="Shoes" className=" w-[500px]  h-[255px] rounded-xl" />
   </figure>

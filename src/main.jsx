@@ -1,3 +1,7 @@
+
+
+
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
@@ -20,8 +24,8 @@ import Register from './components/Register/Register';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Blogs from './components/PurchaseList/Blogs';
 import Contact from './components/Contact/Contact';
-
-
+import { CartProvider } from './Hook/CartContext';
+// import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -81,8 +85,11 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-    <RouterProvider router={router} />
+    <CartProvider>
+    <RouterProvider router={router} >
     
+    </RouterProvider>
+    </CartProvider>
     </AuthProvider>
     
     

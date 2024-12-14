@@ -2,21 +2,21 @@
 
 const Footer = () => {
     return (
-        <div 
-        data-aos="fade-down"
-        >
-           <footer className="footer footer-center p-10 bg-pink-100 ">
+        <div >
+        {/* data-aos="fade-down"
+        > */}
+           <footer className="footer footer-center p-10 bg-pink-100 dark:bg-gray-950 ">
   <aside>
    <div className="flex ">
-   <img className="w-12 " src="https://i.ibb.co/q7KyqzJ/browser.png" alt="" />
-   <img className="w-56" src="https://i.ibb.co/s1fFGFB/194977.png" alt="" />
+   <img className="w-12 rounded-s-md" src="https://i.ibb.co/q7KyqzJ/browser.png" alt="" />
+   <img className="w-56 rounded-e-md" src="https://i.ibb.co/s1fFGFB/194977.png" alt="" />
    </div>
-    <p className="font-bold">
+    <p className="font-bold dark:text-white">
       Darussalam, Mirpur-1 <br/>Dhaka-1216 <br />Mobile No: 01791234674
     </p> 
-    <p>Copyright © 2023 - All right reserved</p>
+    <p className="dark:text-white">Copyright © 2023 - All right reserved</p>
   </aside> 
-  <nav className="w-36">
+  <nav className="w-32">
     <div className="grid grid-flow-col gap-4">
       <a href="https://www.facebook.com/"><img src="https://i.ibb.co/n0vvR5N/download.png" alt="" /></a> 
       <a href="https://www.instagram.com/"><img src="https://i.ibb.co/L81GxxG/download-2.png" alt="" /></a> 
