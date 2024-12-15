@@ -49,7 +49,10 @@ const AddCartSet = () => {
         <div>
             
             {cart.length == 0?
-                <h1 className="h-[80vh] flex justify-center items-center font-bold text-4xl">Not Added Anything!</h1> :
+            
+                <h1 className="h-[80vh] px-4 flex justify-center items-center text-center font-bold text-4xl text-red-700 lg:text-5xl dark:bg-slate-800 dark:text-slate-200">Not Added Anything!😔</h1>
+               
+                :
                 <div className="">
                       {/* <Link to={`/cart`} cartCount={cart.length}>
                 

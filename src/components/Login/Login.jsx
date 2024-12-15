@@ -77,10 +77,10 @@ const handleLogin = e =>{
 
     return (
         <div>
-            <div className=" bg-base-200">
+            <div className=" bg-base-200  dark:bg-slate-800">
   <div className="hero-content ">
     
-    <div className="card max-w-sm w-full  shadow-2xl bg-base-100">
+    <div className="card max-w-sm w-full shadow-2xl bg-base-100 dark:shadow-slate-500">
     <div className="text-center mt-8">
       <h1 className="text-3xl font-bold text-blue-900">Login Now</h1>
      <p className="mt-4">Enter your details to login</p>
